@@ -28,7 +28,8 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofSetColor(255, 0, 0);
+    glColor4f(255, 0, 0, 0);
+    //ofSetColor(255, 0, 0);
     font.drawString("Hello world!", 0, 200);
 
 }
