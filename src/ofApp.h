@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ofMain.h"
+#include "ofxXmlSettings.h"
 
 #ifdef FTGLES
 #include "ofxFTGLESFont.h"
@@ -30,4 +31,8 @@ class ofApp : public ofBaseApp{
 #else
         ofxFTGLFont font;        
 #endif
+    private:
+        ofxXmlSettings textLines;
+        static const string textLinesFilename;
+
 };

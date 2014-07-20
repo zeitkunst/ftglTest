@@ -2,10 +2,15 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    const string textLinesFilename = "textLines.xml";
+
     ofBackground(127, 127, 127);
     ofSetFrameRate(30);
     ofSetVerticalSync(true);
     ofEnableAlphaBlending();
+
+
+    textLines.loadFile(textLinesFilename);
 
 #ifdef FTGLES
     // For FTGLES
